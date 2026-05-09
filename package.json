@@ -1,0 +1,22 @@
+{
+  "name": "@agentdispatch/adapter-template",
+  "version": "0.1.0",
+  "description": "Template for building AgentDispatch cloud adapters.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@agentdispatch/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@agentdispatch/core": "file:../agentdispatch-core",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}
