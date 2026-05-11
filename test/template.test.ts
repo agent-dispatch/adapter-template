@@ -7,7 +7,7 @@ const request: DispatchRequest = {
   accountProfile: "example-dev",
   capability: "agent-runtime",
   taskType: "agent.run",
-  target: { mode: "session" },
+  target: { mode: "session", protocol: "a2a" },
   input: { instruction: "run a template task" }
 };
 
@@ -24,8 +24,35 @@ describe("ExampleCloudAdapter", () => {
         provider: "example",
         capability: "agent-runtime",
         taskTypes: ["agent.run"],
-        targetModes: ["session"]
+        targetModes: ["session"],
+        protocols: ["a2a"]
       }
     ]);
+  });
+
+  it("returns cloud agent metadata without MCP changes", async () => {
+    const adapter = new ExampleCloudAdapter();
+    const prepared = await adapter.prepareTask({
+      dispatch: request,
+      task: {
+        id: "task_template",
+        provider: "example",
+        accountProfile: "example-dev",
+        capability: "agent-runtime",
+        taskType: "agent.run",
+        target: request.target,
+        input: request.input,
+        status: "queued",
+        providerRefs: {},
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      }
+    });
+
+    expect(prepared.cloudAgent).toMatchObject({
+      protocol: "a2a",
+      sessionId: "example-session-task_template",
+      a2a: { messageMethod: "message/send" }
+    });
   });
 });
