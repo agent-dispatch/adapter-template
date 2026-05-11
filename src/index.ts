@@ -11,7 +11,7 @@ import type {
   RuntimeTarget,
   StartTaskRequest,
   StartTaskResult
-} from "@agentdispatch/core";
+} from "@agent-dispatch/core";
 
 export class ExampleCloudAdapter implements BackendAdapter {
   readonly name = "example-cloud";

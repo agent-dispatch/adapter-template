@@ -1,10 +1,10 @@
 # Template Maintenance
 
-`@agentdispatch/adapter-template` is a private template package, not a public runtime dependency.
+`@agent-dispatch/adapter-template` is a private template package, not a public runtime dependency.
 
 ## Validation
 
-Keep the template aligned with `@agentdispatch/core` adapter contracts:
+Keep the template aligned with `@agent-dispatch/core` adapter contracts:
 
 - Run `npm run typecheck`.
 - Run `npm test`.

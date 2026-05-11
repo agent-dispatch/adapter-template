@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { assertBackendAdapterContract, type DispatchRequest } from "@agentdispatch/core";
+import { assertBackendAdapterContract, type DispatchRequest } from "@agent-dispatch/core";
 import { ExampleCloudAdapter } from "../src/index.js";
 
 const request: DispatchRequest = {

@@ -1,22 +1,38 @@
 {
-  "name": "@agentdispatch/adapter-template",
+  "name": "@agent-dispatch/adapter-template",
   "version": "0.1.0",
   "description": "Template for building AgentDispatch cloud adapters.",
   "type": "module",
   "license": "Apache-2.0",
-  "private": true,
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --clean",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@agentdispatch/core": "^0.1.0"
+    "@agent-dispatch/core": "^0.1.0"
   },
   "devDependencies": {
-    "@agentdispatch/core": "file:../agentdispatch-core",
+    "@agent-dispatch/core": "^0.1.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
     "vitest": "^2.1.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agent-dispatch/adapter-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agent-dispatch/adapter-template/issues"
+  },
+  "homepage": "https://github.com/agent-dispatch/adapter-template#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ]
 }
