@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Template for building AgentDispatch cloud adapters.",
   "type": "module",
-  "license": "Apache-2.0",
+  "private": true,
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --clean",
     "test": "vitest run",
@@ -26,9 +26,6 @@
     "url": "https://github.com/agent-dispatch/adapter-template/issues"
   },
   "homepage": "https://github.com/agent-dispatch/adapter-template#readme",
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "dist",
     "README.md",
