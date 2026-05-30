@@ -2,6 +2,16 @@
   "name": "@agent-dispatch/adapter-template",
   "version": "0.1.0",
   "description": "Template for building AgentDispatch cloud adapters.",
+  "keywords": [
+    "agentdispatch",
+    "adapter-template",
+    "cloud-adapters",
+    "mcp",
+    "model-context-protocol",
+    "cloud-agents",
+    "subagents",
+    "agent-orchestration"
+  ],
   "type": "module",
   "license": "Apache-2.0",
   "private": true,
