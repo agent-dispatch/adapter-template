@@ -1,7 +1,7 @@
 # @agent-dispatch/adapter-template
 
-[![npm](https://img.shields.io/npm/v/@agent-dispatch/adapter-template.svg)](https://www.npmjs.com/package/@agent-dispatch/adapter-template)
-[![license](https://img.shields.io/npm/l/@agent-dispatch/adapter-template.svg)](https://www.npmjs.com/package/@agent-dispatch/adapter-template)
+[![CI](https://github.com/agent-dispatch/adapter-template/actions/workflows/ci.yml/badge.svg)](https://github.com/agent-dispatch/adapter-template/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-Apache--2.0-0EA5E9.svg)](./LICENSE)
 
 Starter template for building new AgentDispatch provider adapters.
 
@@ -24,13 +24,15 @@ Use this package when adding support for GCP, Azure, Kubernetes, local runtimes,
 - Implement cancellation and cleanup even if the provider can only offer best-effort behavior.
 - Add tests for capability registration, target resolution, event mapping, cancellation, and cleanup.
 
-## Install
+## Use The Template
 
 ```bash
-npm install @agent-dispatch/adapter-template
+git clone https://github.com/agent-dispatch/adapter-template my-agentdispatch-adapter
+cd my-agentdispatch-adapter
+npm install
 ```
 
-Most teams should copy or fork the template rather than depend on it directly.
+Most teams should copy or fork the template rather than depend on it directly. The package is private template source and is not published to npm.
 
 ## Development
 
