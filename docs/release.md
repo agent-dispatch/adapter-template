@@ -1,4 +1,4 @@
-# Template Maintenance
+# Template Release Policy
 
 `@agent-dispatch/adapter-template` is a private template package, not a public runtime dependency.
 

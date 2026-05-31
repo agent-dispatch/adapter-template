@@ -40,3 +40,5 @@ npm run typecheck
 npm test
 npm run build
 ```
+
+See [template maintenance](https://github.com/agent-dispatch/adapter-template/blob/main/docs/release.md) for release policy. This package is private template source and should not be published unless intentionally converted into a public package.
